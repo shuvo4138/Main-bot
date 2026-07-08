@@ -126,6 +126,11 @@ async def panel_select_inline() -> InlineKeyboardMarkup:
             api_kwargs={"style": "success"},
         )],
         [InlineKeyboardButton(
+            "🌐 Facebook A3",
+            callback_data="select_panel_A3_fb",
+            api_kwargs={"style": "success"},
+        )],
+        [InlineKeyboardButton(
             f"🔴 Facebook S3 ({fb_count})",
             callback_data="s3app:fb",
             api_kwargs={"style": "danger"},
